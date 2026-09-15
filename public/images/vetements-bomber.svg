@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bomberGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#282828" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#141414" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#080808" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="nylonSheen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#333333"/>
+      <stop offset="35%" stop-color="#181818"/>
+      <stop offset="70%" stop-color="#262626"/>
+      <stop offset="100%" stop-color="#111111"/>
+    </linearGradient>
+    <pattern id="gridBomber" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="450" fill="#0c0c0c"/>
+  <rect width="600" height="450" fill="url(#gridBomber)"/>
+  <circle cx="300" cy="225" r="210" fill="url(#bomberGlow)"/>
+
+  <!-- Technical Overlay -->
+  <g opacity="0.25">
+    <circle cx="300" cy="225" r="160" fill="none" stroke="#ffffff" stroke-dasharray="3 6" stroke-width="1"/>
+    <line x1="140" y1="225" x2="460" y2="225" stroke="#ffffff" stroke-width="0.75" stroke-dasharray="2 4"/>
+    <text x="310" y="90" fill="#ffffff" font-family="'Space Mono', monospace" font-size="10" letter-spacing="2">VETEMENTS ARCHIVE // BOMBER.02</text>
+    <text x="150" y="375" fill="#ffffff" font-family="'Space Mono', monospace" font-size="9" letter-spacing="1">MAT: REVERSIBLE HEAVY NYLON</text>
+  </g>
+
+  <!-- Reversible Oversized Bomber Silhouette -->
+  <g transform="translate(85, 35) scale(0.72)">
+    <!-- Main Voluminous Torso -->
+    <path d="M 180 145 C 160 145, 110 180, 75 230 C 60 255, 95 315, 125 305 L 180 255 L 180 460 C 220 475, 380 475, 420 460 L 420 255 L 475 305 C 505 315, 540 255, 525 230 C 490 180, 440 145, 420 145 Z" fill="url(#nylonSheen)" stroke="#383838" stroke-width="2"/>
+
+    <!-- Heavy Ribbed Collar -->
+    <path d="M 235 145 C 265 175, 335 175, 365 145 C 340 135, 260 135, 235 145 Z" fill="#0f0f0f" stroke="#444" stroke-width="2"/>
+
+    <!-- Massive Center Metal Zipper with Tape -->
+    <line x1="300" y1="165" x2="300" y2="465" stroke="#111111" stroke-width="8"/>
+    <line x1="300" y1="165" x2="300" y2="465" stroke="#888888" stroke-width="2.5" stroke-dasharray="3 2"/>
+
+    <!-- Zipper Pull Tag -->
+    <rect x="294" y="220" width="12" height="28" rx="2" fill="#cfcfcf"/>
+    <rect x="296" y="248" width="8" height="35" rx="1" fill="#ff4400"/>
+
+    <!-- Diagonal Front Flap Pockets -->
+    <path d="M 220 340 L 270 380 L 260 395 L 210 355 Z" fill="#141414" stroke="#444" stroke-width="1.8"/>
+    <circle cx="245" cy="365" r="4" fill="#666"/>
+    <path d="M 380 340 L 330 380 L 340 395 L 390 355 Z" fill="#141414" stroke="#444" stroke-width="1.8"/>
+    <circle cx="355" cy="365" r="4" fill="#666"/>
+
+    <!-- Left Arm MA-1 Utility Flight Pocket -->
+    <rect x="90" y="240" width="35" height="50" rx="3" fill="#161616" stroke="#444" stroke-width="1.5" transform="rotate(-30 107 265)"/>
+    <line x1="85" y1="265" x2="115" y2="248" stroke="#888" stroke-width="2"/>
+    <rect x="70" y="270" width="10" height="40" rx="1" fill="#ff0000" transform="rotate(-30 75 290)"/>
+
+    <!-- Heavy Ribbed Hem Band -->
+    <path d="M 180 460 C 220 480, 380 480, 420 460 L 420 485 C 380 500, 220 500, 180 485 Z" fill="#0f0f0f" stroke="#333" stroke-width="1.8"/>
+
+    <!-- Ribbed Cuffs -->
+    <rect x="105" y="295" width="26" height="24" rx="2" transform="rotate(-35 118 307)" fill="#0f0f0f" stroke="#333" stroke-width="1.5"/>
+    <rect x="468" y="295" width="26" height="24" rx="2" transform="rotate(35 481 307)" fill="#0f0f0f" stroke="#333" stroke-width="1.5"/>
+
+    <!-- Subtle Nylon Puckering Seam Lines -->
+    <path d="M 180 255 Q 230 310, 190 390" stroke="#252525" stroke-width="3" fill="none"/>
+    <path d="M 420 255 Q 370 310, 410 390" stroke="#252525" stroke-width="3" fill="none"/>
+
+    <!-- Branding Text -->
+    <text x="300" y="195" text-anchor="middle" fill="#ffffff" font-family="'Syne', sans-serif" font-size="14" font-weight="800" letter-spacing="4">VETEMENTS</text>
+    <text x="300" y="208" text-anchor="middle" fill="#777777" font-family="'Space Mono', monospace" font-size="8" letter-spacing="2">HAUTE COUTURE // REVERSIBLE</text>
+  </g>
+</svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <!-- Studio Lighting Linear & Radial Gradients -->
+    <linearGradient id="p_soleDark" x1="0%" y1="0%" x2="100%" y2="10%">
+      <stop offset="0%" stop-color="#070707"/>
+      <stop offset="30%" stop-color="#1f1f1f"/>
+      <stop offset="65%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="p_tpuGloss" x1="0%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#3d3d3d"/>
+      <stop offset="40%" stop-color="#161616"/>
+      <stop offset="70%" stop-color="#2a2a2a"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="p_rimLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="15%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="p_3mReflect" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#777777"/>
+      <stop offset="50%" stop-color="#b0b0b0"/>
+      <stop offset="100%" stop-color="#666666"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Balenciaga Track.1 (All-Black) — 01 / PROFILE SIDE ELEVATION -->
+  <g transform="translate(40, 30)">
+    <!-- Sculpted Chunky Outsole & Midsole Architecture -->
+    <path d="M 120 370 C 160 372, 230 380, 320 380 C 440 380, 560 370, 650 320 C 620 295, 540 310, 480 310 C 370 310, 260 295, 175 330 C 140 345, 110 360, 120 370 Z" fill="url(#p_soleDark)" stroke="#2b2b2b" stroke-width="2"/>
+    <path d="M 115 350 C 190 365, 410 370, 610 315 C 590 285, 510 295, 430 295 C 290 295, 185 285, 135 325 Z" fill="#121212" stroke="#333333" stroke-width="1.5"/>
+    
+    <!-- Rugged Trail Cleat Lugs -->
+    <path d="M 140 365 L 165 365 L 160 385 L 135 385 Z" fill="#1e1e1e" stroke="#444" stroke-width="1"/>
+    <path d="M 190 372 L 220 372 L 215 394 L 185 394 Z" fill="#1e1e1e" stroke="#444" stroke-width="1"/>
+    <path d="M 250 376 L 285 376 L 280 398 L 245 398 Z" fill="#242424" stroke="#555" stroke-width="1"/>
+    <path d="M 315 378 L 350 378 L 345 400 L 310 400 Z" fill="#242424" stroke="#555" stroke-width="1"/>
+    <path d="M 390 372 L 425 372 L 420 394 L 385 394 Z" fill="#222222" stroke="#444" stroke-width="1"/>
+    <path d="M 460 360 L 495 360 L 490 382 L 455 382 Z" fill="#202020" stroke="#444" stroke-width="1"/>
+    <path d="M 530 345 L 565 345 L 560 366 L 525 366 Z" fill="#1e1e1e" stroke="#444" stroke-width="1"/>
+    <path d="M 590 325 L 620 325 L 615 344 L 585 344 Z" fill="#1c1c1c" stroke="#444" stroke-width="1"/>
+
+    <!-- High Sculpted Heel Spoiler & TPU Cushion Windows -->
+    <path d="M 130 330 C 110 260, 125 180, 195 155 C 230 145, 275 168, 290 195 C 230 225, 165 265, 130 330 Z" fill="#141414" stroke="#383838" stroke-width="2"/>
+    <path d="M 105 320 C 100 280, 115 250, 145 240 L 140 280 Z" fill="url(#p_tpuGloss)" stroke="#444" stroke-width="1.2"/>
+    <ellipse cx="160" cy="305" rx="20" ry="10" fill="#080808" stroke="#555" stroke-width="1.5"/>
+    <ellipse cx="205" cy="318" rx="22" ry="10" fill="#080808" stroke="#555" stroke-width="1.5"/>
+
+    <!-- Breathable Mesh Armature Body -->
+    <path d="M 195 155 C 270 148, 320 180, 390 200 C 470 218, 540 240, 595 268 C 580 292, 530 298, 470 295 C 350 295, 235 260, 195 155 Z" fill="#161616" stroke="#2e2e2e" stroke-width="1.5"/>
+    
+    <!-- 176 Layered Exoskeleton Cage Ribs (Lateral Strips) -->
+    <path d="M 215 165 L 255 310" stroke="#4a4a4a" stroke-width="5.5" stroke-linecap="round"/>
+    <path d="M 215 165 L 255 310" stroke="url(#p_rimLight)" stroke-width="1.5" stroke-linecap="round"/>
+
+    <path d="M 265 182 L 310 305" stroke="#555555" stroke-width="5.5" stroke-linecap="round"/>
+    <path d="M 265 182 L 310 305" stroke="url(#p_rimLight)" stroke-width="1.5" stroke-linecap="round"/>
+
+    <path d="M 320 195 L 375 298" stroke="#4f4f4f" stroke-width="5.5" stroke-linecap="round"/>
+    <path d="M 380 208 L 440 292" stroke="#5a5a5a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 445 224 L 505 285" stroke="#4d4d4d" stroke-width="4.8" stroke-linecap="round"/>
+    <path d="M 508 240 L 565 278" stroke="#5e5e5e" stroke-width="4.5" stroke-linecap="round"/>
+
+    <!-- Dynamic Diagonal Interlocking Cage Struts -->
+    <path d="M 235 290 L 305 190 L 370 285 L 450 210 L 530 275" fill="none" stroke="url(#p_tpuGloss)" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M 270 295 L 340 205 L 415 288 L 490 220" fill="none" stroke="#2d2d2d" stroke-width="2.5"/>
+
+    <!-- Reinforced Toe Bumper Guard & Sizing Badge Plate -->
+    <path d="M 550 255 C 600 258, 645 280, 650 315 C 615 328, 575 315, 545 295 Z" fill="#1c1c1c" stroke="#444" stroke-width="1.8"/>
+    <rect x="585" y="278" width="30" height="14" rx="2" fill="#ffffff"/>
+    <text x="591" y="289" fill="#000000" font-family="'Space Mono', monospace" font-size="11" font-weight="bold">42</text>
+
+    <!-- Padded Technical Collar, Tongue & Double Woven Laces -->
+    <path d="M 245 150 C 275 105, 320 95, 345 125 C 325 155, 285 168, 245 150 Z" fill="#202020" stroke="#3d3d3d" stroke-width="1.8"/>
+    <path d="M 315 110 L 435 220" stroke="#ffffff" stroke-width="2.8" stroke-dasharray="8 4" stroke-linecap="round"/>
+    <path d="M 295 135 L 470 235" stroke="#b0b0b0" stroke-width="2.5" stroke-dasharray="6 4" stroke-linecap="round"/>
+    <path d="M 275 155 L 505 248" stroke="#ffffff" stroke-width="2.2" stroke-dasharray="7 4" stroke-linecap="round"/>
+
+    <!-- Tongue Pull Loop & Branding -->
+    <rect x="330" y="98" width="22" height="10" rx="2" fill="url(#p_3mReflect)"/>
+    <text x="333" y="106" fill="#000" font-family="'Space Mono', monospace" font-size="6" font-weight="bold">TRACK</text>
+
+    <!-- Rear 3M Reflective Heel Tab -->
+    <path d="M 180 160 C 160 140, 150 115, 170 108 C 182 105, 195 128, 192 150 Z" fill="url(#p_3mReflect)" stroke="#ffffff" stroke-width="1.2"/>
+    <text x="171" y="132" fill="#000" font-family="'Space Mono', monospace" font-size="7" font-weight="bold" transform="rotate(-40 171 132)">BB</text>
+
+    <!-- Side Debossed Branding -->
+    <text x="260" y="245" fill="#ffffff" font-family="'Syne', sans-serif" font-size="14" font-weight="800" letter-spacing="4">BALENCIAGA</text>
+    <text x="260" y="258" fill="#777777" font-family="'Space Mono', monospace" font-size="8" letter-spacing="2">TRACK.1 // ALL-BLACK</text>
+  </g>
+</svg>

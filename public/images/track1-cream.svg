@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tqc_sole" x1="0%" y1="0%" x2="100%" y2="20%">
+      <stop offset="0%" stop-color="#dfdad1"/>
+      <stop offset="35%" stop-color="#f0ece4"/>
+      <stop offset="70%" stop-color="#e2ddd5"/>
+      <stop offset="100%" stop-color="#cfc8be"/>
+    </linearGradient>
+    <linearGradient id="tqc_tpu" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8e3da"/>
+      <stop offset="50%" stop-color="#c9c0b3"/>
+      <stop offset="100%" stop-color="#ded8ce"/>
+    </linearGradient>
+    <linearGradient id="tqc_rim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="tqc_reflect" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d6cfc4"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#c2b9ac"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Balenciaga Track.1 (Off-White / Cream) — AUTUMN EDITION -->
+  <g transform="translate(60, 25)">
+    <!-- 3/4 Dynamic Sculpted Outsole with Wide Flare -->
+    <path d="M 140 350 C 190 355, 300 375, 430 365 C 550 355, 620 310, 640 270 C 600 250, 520 270, 430 275 C 310 280, 210 285, 155 315 C 135 330, 130 345, 140 350 Z" fill="url(#tqc_sole)" stroke="#c2b9ac" stroke-width="2"/>
+    <path d="M 160 335 C 240 350, 420 355, 590 285 C 560 260, 490 265, 390 270 C 270 275, 195 285, 160 335 Z" fill="#ece6dc" stroke="#b8ae9f" stroke-width="1.5"/>
+
+    <!-- Outsole Lugs -->
+    <path d="M 170 345 L 195 345 L 190 368 L 165 368 Z" fill="#d2c9bc" stroke="#a89e90" stroke-width="1"/>
+    <path d="M 230 355 L 260 355 L 255 378 L 225 378 Z" fill="#ded7cb" stroke="#a89e90" stroke-width="1"/>
+    <path d="M 300 362 L 335 362 L 330 385 L 295 385 Z" fill="#e5dfd4" stroke="#a89e90" stroke-width="1"/>
+    <path d="M 380 362 L 415 362 L 410 382 L 375 382 Z" fill="#dad3c7" stroke="#a89e90" stroke-width="1"/>
+    <path d="M 460 350 L 495 350 L 490 370 L 455 370 Z" fill="#d0c7ba" stroke="#a89e90" stroke-width="1"/>
+    <path d="M 540 325 L 570 325 L 565 345 L 535 345 Z" fill="#c4baa9" stroke="#a89e90" stroke-width="1"/>
+
+    <!-- Heel Wedge, Cushion Unit & High Collar Cut -->
+    <path d="M 155 315 C 140 240, 165 170, 240 145 C 280 135, 330 160, 340 190 C 270 220, 190 255, 155 315 Z" fill="#f4efe6" stroke="#c4baa9" stroke-width="1.8"/>
+    <ellipse cx="185" cy="285" rx="22" ry="11" fill="#ded6c9" stroke="#b0a594" stroke-width="1.5"/>
+    <ellipse cx="235" cy="298" rx="24" ry="11" fill="#ded6c9" stroke="#b0a594" stroke-width="1.5"/>
+
+    <!-- Upper Body Mesh with 3/4 Depth Perspective -->
+    <path d="M 240 145 C 310 140, 370 170, 440 190 C 510 210, 565 228, 615 250 C 585 275, 520 275, 450 272 C 340 272, 250 245, 240 145 Z" fill="#f8f5ee" stroke="#ded8cd" stroke-width="1.5"/>
+    
+    <!-- 176 Articulated Cage Overlays (Off-White & Cream) -->
+    <path d="M 260 155 L 305 285" stroke="#d5ccbe" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 260 155 L 305 285" stroke="url(#tqc_rim)" stroke-width="2" stroke-linecap="round"/>
+
+    <path d="M 315 170 L 365 280" stroke="#dad0c2" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 315 170 L 365 280" stroke="url(#tqc_rim)" stroke-width="2" stroke-linecap="round"/>
+
+    <path d="M 375 185 L 430 275" stroke="#cec4b4" stroke-width="5.5" stroke-linecap="round"/>
+    <path d="M 440 198 L 495 268" stroke="#d8cfbf" stroke-width="5.5" stroke-linecap="round"/>
+    <path d="M 505 215 L 555 260" stroke="#c8bead" stroke-width="5.5" stroke-linecap="round"/>
+
+    <!-- Medial Inner Cage Highlights -->
+    <path d="M 325 140 L 350 200" stroke="#b8ae9d" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 380 155 L 410 215" stroke="#b8ae9d" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 445 175 L 475 225" stroke="#b2a897" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Dynamic TPU Cage Cross Struts -->
+    <path d="M 280 270 L 350 178 L 415 265 L 490 198 L 565 255" fill="none" stroke="url(#tqc_tpu)" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M 320 275 L 385 192 L 455 270 L 525 210" fill="none" stroke="#beb4a3" stroke-width="2.5"/>
+
+    <!-- Sculpted Toe Box Bumper with 42 Sizing Badge Plate -->
+    <path d="M 555 235 C 605 238, 640 255, 645 280 C 620 295, 575 288, 545 270 Z" fill="#e8e2d7" stroke="#b8ad9c" stroke-width="2"/>
+    <rect x="580" y="250" width="34" height="16" rx="2" fill="#203b90"/>
+    <text x="588" y="262" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11" font-weight="bold">42</text>
+
+    <!-- Padded 3D Tongue, Collar Rim & Woven Double Laces -->
+    <path d="M 290 140 C 320 95, 370 85, 395 115 C 375 145, 330 155, 290 140 Z" fill="#eae5dc" stroke="#beb4a3" stroke-width="2"/>
+    
+    <!-- Double Woven High-Contrast Laces (Cream & Rust) -->
+    <path d="M 360 102 L 475 205" stroke="#ffffff" stroke-width="3.2" stroke-dasharray="9 4" stroke-linecap="round"/>
+    <path d="M 335 125 L 510 220" stroke="#c46d3b" stroke-width="3" stroke-dasharray="7 4" stroke-linecap="round"/>
+    <path d="M 315 145 L 545 232" stroke="#ffffff" stroke-width="2.8" stroke-dasharray="8 4" stroke-linecap="round"/>
+    <path d="M 300 162 L 575 242" stroke="#203b90" stroke-width="2.5" stroke-dasharray="6 4" stroke-linecap="round"/>
+
+    <!-- Tongue Reflective Rubber Patch -->
+    <rect x="375" y="90" width="28" height="13" rx="2" fill="url(#tqc_reflect)"/>
+    <text x="378" y="100" fill="#203b90" font-family="'Inter', sans-serif" font-size="8" font-weight="800">TRACK</text>
+
+    <!-- Rear Heel Tab & Loop -->
+    <path d="M 215 150 C 195 130, 185 105, 205 98 C 218 95, 230 118, 228 140 Z" fill="url(#tqc_reflect)" stroke="#ffffff" stroke-width="1.5"/>
+    <text x="207" y="122" fill="#203b90" font-family="'Inter', sans-serif" font-size="8" font-weight="800" transform="rotate(-40 207 122)">BB</text>
+
+    <!-- Central Lateral Brand Stamp -->
+    <text x="310" y="235" fill="#203b90" font-family="'Syne', sans-serif" font-size="15" font-weight="800" letter-spacing="4">BALENCIAGA</text>
+    <text x="310" y="249" fill="#887e6f" font-family="'Inter', sans-serif" font-size="8" font-weight="600" letter-spacing="2">TRACK.1 — OFF-WHITE / CREAM</text>
+  </g>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="f_sole" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c1c1c"/>
+      <stop offset="50%" stop-color="#0c0c0c"/>
+      <stop offset="100%" stop-color="#030303"/>
+    </linearGradient>
+    <linearGradient id="f_tpu" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#242424"/>
+      <stop offset="50%" stop-color="#404040"/>
+      <stop offset="100%" stop-color="#242424"/>
+    </linearGradient>
+    <linearGradient id="f_3m" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#888888"/>
+      <stop offset="50%" stop-color="#d4d4d4"/>
+      <stop offset="100%" stop-color="#666666"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Balenciaga Track.1 (All-Black) — 03 / FRONTAL TOE PERSPECTIVE -->
+  <g transform="translate(180, 20)">
+    <!-- Flared Wide Trail Lug Outsole (Frontal Base) -->
+    <path d="M 70 380 C 130 388, 310 388, 370 380 C 420 370, 430 340, 390 320 C 350 305, 90 305, 50 320 C 10 340, 20 370, 70 380 Z" fill="url(#f_sole)" stroke="#2e2e2e" stroke-width="2"/>
+    
+    <!-- Outward Cleats (Lateral and Medial) -->
+    <path d="M 40 335 L 75 330 L 65 365 L 25 365 Z" fill="#1e1e1e" stroke="#444" stroke-width="1.2"/>
+    <path d="M 400 335 L 365 330 L 375 365 L 415 365 Z" fill="#1e1e1e" stroke="#444" stroke-width="1.2"/>
+    <path d="M 85 365 L 140 370 L 135 395 L 80 392 Z" fill="#222" stroke="#444" stroke-width="1.2"/>
+    <path d="M 355 365 L 300 370 L 305 395 L 360 392 Z" fill="#222" stroke="#444" stroke-width="1.2"/>
+    <path d="M 160 372 L 280 372 L 275 398 L 165 398 Z" fill="#242424" stroke="#555" stroke-width="1.2"/>
+
+    <!-- Front Curved Toe Bumper Arch & Mudguard -->
+    <path d="M 80 320 C 130 250, 310 250, 360 320 C 310 335, 130 335, 80 320 Z" fill="#161616" stroke="#383838" stroke-width="2"/>
+
+    <!-- Sizing Badge Plate (Centered "42") -->
+    <rect x="195" y="300" width="50" height="22" rx="3" fill="#ffffff"/>
+    <text x="207" y="316" fill="#000000" font-family="'Space Mono', monospace" font-size="16" font-weight="bold">42</text>
+
+    <!-- Frontal Toe Cage Strips Framing the Front Cap -->
+    <path d="M 120 280 C 150 240, 180 230, 220 230 C 260 230, 290 240, 320 280" fill="none" stroke="#444" stroke-width="4.5"/>
+    <path d="M 95 305 L 145 255" stroke="#555" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 345 305 L 295 255" stroke="#555" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Mid-Foot Breathable Mesh & Dynamic Dual-Lacing Structure -->
+    <path d="M 120 240 C 140 180, 150 140, 220 140 C 290 140, 300 180, 320 240 Z" fill="#141414" stroke="#2c2c2c" stroke-width="1.5"/>
+
+    <!-- Criss-Crossing Double Technical Laces (Front Perspective) -->
+    <path d="M 145 240 L 295 210" stroke="#ffffff" stroke-width="3.2" stroke-dasharray="8 4" stroke-linecap="round"/>
+    <path d="M 295 240 L 145 210" stroke="#ffffff" stroke-width="3.2" stroke-dasharray="8 4" stroke-linecap="round"/>
+    <path d="M 155 205 L 285 178" stroke="#cccccc" stroke-width="3" stroke-dasharray="7 4" stroke-linecap="round"/>
+    <path d="M 285 205 L 155 178" stroke="#cccccc" stroke-width="3" stroke-dasharray="7 4" stroke-linecap="round"/>
+    <path d="M 165 175 L 275 148" stroke="#ffffff" stroke-width="2.8" stroke-dasharray="6 3" stroke-linecap="round"/>
+    <path d="M 275 175 L 165 148" stroke="#ffffff" stroke-width="2.8" stroke-dasharray="6 3" stroke-linecap="round"/>
+
+    <!-- Padded High Tongue Arch -->
+    <path d="M 160 145 C 160 85, 280 85, 280 145 Z" fill="#1f1f1f" stroke="#444" stroke-width="2"/>
+
+    <!-- Tongue 3M Reflective Rubber "TRACK" Emblem -->
+    <rect x="185" y="105" width="70" height="24" rx="3" fill="url(#f_3m)"/>
+    <text x="198" y="122" fill="#000000" font-family="'Space Mono', monospace" font-size="12" font-weight="bold" letter-spacing="2">TRACK</text>
+
+    <!-- Collar Rim Framing the Ankle -->
+    <path d="M 145 155 C 130 110, 160 80, 220 80 C 280 80, 310 110, 295 155" fill="none" stroke="#333" stroke-width="5"/>
+
+    <!-- Frontal Lateral Rib Wings (Flaring Symmetry) -->
+    <path d="M 80 290 Q 60 210, 130 165" fill="none" stroke="#4f4f4f" stroke-width="4.5"/>
+    <path d="M 360 290 Q 380 210, 310 165" fill="none" stroke="#4f4f4f" stroke-width="4.5"/>
+
+    <!-- Front Perspective Text Stamp -->
+    <text x="220" y="425" text-anchor="middle" fill="#ffffff" font-family="'Syne', sans-serif" font-size="15" font-weight="800" letter-spacing="4">BALENCIAGA</text>
+    <text x="220" y="440" text-anchor="middle" fill="#777777" font-family="'Space Mono', monospace" font-size="9" letter-spacing="2">TRACK.1 — FRONTAL PERSPECTIVE</text>
+  </g>
+</svg>

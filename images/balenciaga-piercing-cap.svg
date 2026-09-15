@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <radialGradient id="capGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#282828" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#121212" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#080808" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="gridCap" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="450" fill="#0c0c0c"/>
+  <rect width="600" height="450" fill="url(#gridCap)"/>
+  <circle cx="300" cy="225" r="210" fill="url(#capGlow)"/>
+
+  <!-- Technical Reticle -->
+  <g opacity="0.25">
+    <circle cx="300" cy="225" r="160" fill="none" stroke="#ffffff" stroke-dasharray="3 6" stroke-width="1"/>
+    <line x1="140" y1="225" x2="460" y2="225" stroke="#ffffff" stroke-width="0.75" stroke-dasharray="2 4"/>
+    <text x="310" y="90" fill="#ffffff" font-family="'Space Mono', monospace" font-size="10" letter-spacing="2">BALENCIAGA ARCHIVE // PRC.06</text>
+    <text x="150" y="375" fill="#ffffff" font-family="'Space Mono', monospace" font-size="9" letter-spacing="1">DETAIL: METAL PIERCING HARDWARE</text>
+  </g>
+
+  <!-- Distressed Pierced Cap Silhouette -->
+  <g transform="translate(60, 45) scale(0.8)">
+    <!-- Crown Dome -->
+    <path d="M 140 260 C 140 130, 240 100, 360 100 C 480 100, 520 190, 520 260 C 470 270, 210 270, 140 260 Z" fill="#141414" stroke="#333" stroke-width="2"/>
+    <ellipse cx="355" cy="100" rx="14" ry="7" fill="#090909" stroke="#555" stroke-width="1.5"/>
+
+    <!-- Seam Lines -->
+    <path d="M 355 107 Q 350 180, 350 265" stroke="#2a2a2a" stroke-width="2.5" fill="none"/>
+    <path d="M 355 107 Q 270 160, 220 260" stroke="#2a2a2a" stroke-width="2" fill="none"/>
+    <path d="M 355 107 Q 440 160, 470 260" stroke="#2a2a2a" stroke-width="2" fill="none"/>
+
+    <!-- Curved Visor Brim with Distressing cuts -->
+    <path d="M 120 260 C 90 280, 60 300, 100 330 C 180 370, 380 370, 480 290 C 440 275, 360 260, 120 260 Z" fill="#1b1b1b" stroke="#444" stroke-width="2"/>
+    <path d="M 115 310 Q 280 355, 450 285" stroke="#333" stroke-width="2" fill="none"/>
+
+    <!-- Distressed Raw Cuts on Brim -->
+    <line x1="160" y1="315" x2="175" y2="330" stroke="#444" stroke-width="3"/>
+    <line x1="220" y1="330" x2="235" y2="345" stroke="#444" stroke-width="3"/>
+
+    <!-- Metal Piercing Hardware Rings on Visor Brim Edge -->
+    <g transform="translate(130, 310)">
+      <circle cx="0" cy="0" r="8" fill="none" stroke="#e0e0e0" stroke-width="3"/>
+      <circle cx="20" cy="8" r="8" fill="none" stroke="#e0e0e0" stroke-width="3"/>
+      <circle cx="40" cy="15" r="8" fill="none" stroke="#e0e0e0" stroke-width="3"/>
+    </g>
+
+    <g transform="translate(420, 285)">
+      <circle cx="0" cy="0" r="8" fill="none" stroke="#e0e0e0" stroke-width="3"/>
+      <circle cx="18" cy="-6" r="8" fill="none" stroke="#e0e0e0" stroke-width="3"/>
+    </g>
+
+    <!-- Front 3D Embroidery BALENCIAGA -->
+    <text x="355" y="195" text-anchor="middle" fill="#ffffff" font-family="'Syne', sans-serif" font-size="18" font-weight="800" letter-spacing="4">BALENCIAGA</text>
+    <text x="355" y="215" text-anchor="middle" fill="#777777" font-family="'Space Mono', monospace" font-size="9" letter-spacing="2">PIERCED // PARIS</text>
+  </g>
+</svg>

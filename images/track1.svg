@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <radialGradient id="cardGlow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2a2a2a" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#141414" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0c0c0c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="metalGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#444444"/>
+      <stop offset="50%" stop-color="#111111"/>
+      <stop offset="100%" stop-color="#282828"/>
+    </linearGradient>
+    <linearGradient id="soleGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d0d0d"/>
+      <stop offset="35%" stop-color="#222222"/>
+      <stop offset="70%" stop-color="#181818"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <pattern id="techGrid1" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="600" height="450" fill="#0e0e0e"/>
+  <rect width="600" height="450" fill="url(#techGrid1)"/>
+  <circle cx="300" cy="235" r="220" fill="url(#cardGlow1)"/>
+
+  <!-- Technical Caliper & Grid Reticles -->
+  <g opacity="0.25">
+    <circle cx="300" cy="235" r="160" fill="none" stroke="#ffffff" stroke-dasharray="3 6" stroke-width="1"/>
+    <line x1="140" y1="235" x2="460" y2="235" stroke="#ffffff" stroke-width="0.75" stroke-dasharray="2 4"/>
+    <line x1="300" y1="90" x2="300" y2="370" stroke="#ffffff" stroke-width="0.75" stroke-dasharray="2 4"/>
+    <text x="310" y="105" fill="#ffffff" font-family="Space Mono, monospace" font-size="10" letter-spacing="2">BALENCIAGA ARCHIVE // TRK.01</text>
+    <text x="150" y="360" fill="#ffffff" font-family="Space Mono, monospace" font-size="9" letter-spacing="1">GEO: 176 PROCEDURAL PANELS</text>
+  </g>
+
+  <!-- Balenciaga Track.1 Chunky Sneaker Silhouette -->
+  <g transform="translate(45, 10) scale(0.85)">
+    <!-- Sole Outlines & Sculpted Cushion Base -->
+    <path d="M 120 330 C 140 330, 200 340, 280 340 C 370 340, 460 335, 520 290 C 500 270, 440 280, 390 280 C 310 280, 220 270, 160 295 C 130 305, 110 320, 120 330 Z" fill="url(#soleGrad1)" stroke="#333333" stroke-width="1.5"/>
+    <path d="M 115 315 C 180 325, 340 330, 495 285 C 480 260, 420 265, 350 265 C 240 265, 160 260, 125 290 Z" fill="#141414" stroke="#444444" stroke-width="1.2"/>
+    
+    <!-- Sole Lug Cleats -->
+    <rect x="140" y="325" width="22" height="18" rx="2" fill="#262626" stroke="#555555" stroke-width="1"/>
+    <rect x="180" y="332" width="24" height="18" rx="2" fill="#262626" stroke="#555555" stroke-width="1"/>
+    <rect x="230" y="335" width="26" height="18" rx="2" fill="#262626" stroke="#555555" stroke-width="1"/>
+    <rect x="280" y="337" width="26" height="18" rx="2" fill="#262626" stroke="#555555" stroke-width="1"/>
+    <rect x="340" y="333" width="28" height="18" rx="2" fill="#262626" stroke="#555555" stroke-width="1"/>
+    <rect x="400" y="322" width="26" height="18" rx="2" fill="#262626" stroke="#555555" stroke-width="1"/>
+    <rect x="455" y="305" width="24" height="18" rx="2" fill="#262626" stroke="#555555" stroke-width="1"/>
+
+    <!-- Heel Wedge & Air Cushion Pods -->
+    <path d="M 125 295 C 110 240, 120 180, 175 160 C 200 152, 230 170, 245 190 C 200 215, 150 245, 125 295 Z" fill="#121212" stroke="#444444" stroke-width="1.5"/>
+    <ellipse cx="145" cy="275" rx="14" ry="7" fill="#080808" stroke="#666666" stroke-width="1"/>
+    <ellipse cx="180" cy="285" rx="15" ry="7" fill="#080808" stroke="#666666" stroke-width="1"/>
+
+    <!-- Main Upper Body & Breathable Mesh Underlays -->
+    <path d="M 175 160 C 230 155, 270 180, 320 195 C 380 210, 440 230, 480 250 C 470 268, 430 272, 380 270 C 290 268, 200 240, 175 160 Z" fill="#161616" stroke="#383838" stroke-width="1"/>
+    
+    <!-- Multi-Layered Exoskeleton Cage Ribs -->
+    <path d="M 190 170 L 220 280" stroke="#777777" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 230 185 L 265 275" stroke="#999999" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 275 195 L 315 270" stroke="#888888" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 320 205 L 365 268" stroke="#aaaaaa" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 370 218 L 415 262" stroke="#777777" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 418 230 L 460 258" stroke="#999999" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Intersecting Diagonal Cage Braces -->
+    <path d="M 205 265 L 260 190 L 310 260 L 370 205 L 430 255" fill="none" stroke="#555555" stroke-width="2.5"/>
+
+    <!-- Toe Bumper & Size Number Plate -->
+    <path d="M 450 240 C 485 242, 515 260, 520 285 C 495 295, 465 285, 445 270 Z" fill="#202020" stroke="#777777" stroke-width="1.5"/>
+    <rect x="475" y="258" width="22" height="10" rx="2" fill="#ffffff"/>
+    <text x="480" y="266" fill="#000000" font-family="Space Mono, monospace" font-size="8" font-weight="bold">42</text>
+
+    <!-- Padded Collar, Tongue & Woven Double Laces -->
+    <path d="M 215 155 C 240 120, 270 115, 290 135 C 275 160, 245 170, 215 155 Z" fill="#222222" stroke="#555555" stroke-width="1.2"/>
+    <path d="M 270 125 L 360 210" stroke="#ffffff" stroke-width="2" stroke-dasharray="5 3"/>
+    <path d="M 255 145 L 385 220" stroke="#cccccc" stroke-width="2" stroke-dasharray="4 4"/>
+    <path d="M 240 160 L 410 230" stroke="#ffffff" stroke-width="1.8" stroke-dasharray="6 3"/>
+
+    <!-- Heel 3M Reflective Pull Tab -->
+    <path d="M 160 165 C 145 150, 140 130, 155 125 C 165 122, 175 140, 172 158 Z" fill="#888888" stroke="#ffffff" stroke-width="1.5"/>
+    
+    <!-- Branding Stamp -->
+    <text x="210" y="238" fill="#ffffff" font-family="Space Grotesk, sans-serif" font-size="10" font-weight="bold" letter-spacing="3">BALENCIAGA</text>
+    <text x="210" y="248" fill="#888888" font-family="Space Mono, monospace" font-size="7" letter-spacing="1">TRACK.1 — ARCHIVE</text>
+  </g>
+</svg>

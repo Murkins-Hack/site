@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MURK1INSHOPSPORTFOLIO — Dark Glassmorphism Storefront // Сентябрь 2026</title>
+  <meta name="description" content="Люксовый осенний дроп в темной эстетике Obsidian Glassmorphism. Флагман: Balenciaga Track.1. Чистая предметная съемка, React Bits Logo Loop и Glass Surface.">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Google Fonts: Inter & Syne / Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="site-shell">
+
+    <!-- ===================================================================
+         1. TOP ANNOUNCEMENT BANNER
+         =================================================================== -->
+    <aside class="top-banner">
+      <div class="top-banner-inner">
+        <span class="banner-tag">СЕНТЯБРЬ '26</span>
+        <span class="banner-text">СЕНТЯБРЬСКИЙ ДРОП 2026 // БЕСПЛАТНАЯ КУРЬЕРСКАЯ ДОСТАВКА В ЕС И СНГ →</span>
+      </div>
+    </aside>
+
+    <!-- ===================================================================
+         2. FLOATING ISLAND CAPSULE NAV (HEADER)
+         =================================================================== -->
+    <header class="glass-nav" id="siteHeader">
+      <div class="glass-nav-inner">
+        <!-- Левая часть: логотип бренда -->
+        <div class="nav-brand-group">
+          <a href="#" class="brand-logo" aria-label="MURK1INSHOPSPORTFOLIO">
+            <span class="logo-symbol">✦</span>
+            <span class="logo-text">MURK1INSHOPSPORTFOLIO</span>
+          </a>
+        </div>
+
+        <!-- Центральная навигация по категориям (Сегментированная капсула) -->
+        <nav class="category-pills" aria-label="Категории каталога">
+          <button class="pill-chip is-active top-products-chip" data-filter="all" data-decrypted="ТОП ТОВАРЫ">ТОП ТОВАРЫ</button>
+          <button class="pill-chip" data-filter="footwear">ОБУВЬ</button>
+          <button class="pill-chip" data-filter="outerwear">КУРТКИ & ХУДИ</button>
+          <button class="pill-chip" data-filter="tops">ФУТБОЛКИ</button>
+        </nav>
+
+        <!-- Правая часть: быстрые действия -->
+        <div class="nav-tools">
+          <button class="icon-pill search-trigger-pill" id="searchBtn" aria-label="Поиск по каталогу">
+            <i data-lucide="search"></i>
+            <span class="search-key-hint">⌘K</span>
+          </button>
+          <button class="icon-pill wishlist-btn" id="wishlistBtn" aria-label="Избранное">
+            <i data-lucide="heart"></i>
+            <span class="icon-badge" id="wishlistBadge" style="display: none;">0</span>
+          </button>
+          <button class="cart-trigger-pill" id="openCartBtn" aria-label="Корзина покупателя">
+            <i data-lucide="shopping-bag"></i>
+            <span class="cart-pill-label">КОРЗИНА [ <span id="cartHeaderCount">0</span> ]</span>
+          </button>
+          <button class="mobile-menu-pill" id="mobileMenuBtn" aria-label="Открыть мобильное меню">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Выпадающая поисковая строка -->
+      <div class="search-overlay-bar" id="searchOverlayBar">
+        <div class="search-bar-content">
+          <i data-lucide="search"></i>
+          <input type="text" id="searchInput" placeholder="Поиск модели, бренда или артикула (Track.1, Bomber, Hoodie)..." autocomplete="off">
+          <button class="search-close-icon" id="searchCloseIcon" aria-label="Закрыть поиск">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Мобильное выпадающее меню -->
+      <div class="mobile-drawer-nav" id="mobileDrawerNav">
+        <div class="mobile-nav-list">
+          <button class="mobile-nav-pill is-active" data-filter="all" data-decrypted="ТОП ТОВАРЫ">ТОП ТОВАРЫ (4)</button>
+          <button class="mobile-nav-pill" data-filter="footwear">ОБУВЬ (1)</button>
+          <button class="mobile-nav-pill" data-filter="outerwear">КУРТКИ И ХУДИ (2)</button>
+          <button class="mobile-nav-pill" data-filter="tops">ФУТБОЛКИ (1)</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===================================================================
+         3. CINEMATIC HERO SECTION
+         =================================================================== -->
+    <section class="cinematic-hero" id="heroSection">
+      <!-- Фоновый атмосферный туманный горный лес с вертикальной виньеткой в #07090e -->
+      <div class="hero-mountain-bg"></div>
+
+      <!-- React Bits: Ferrofluid Interactive WebGL Canvas -->
+      <div id="heroFerrofluidContainer" class="hero-ferrofluid-container" aria-hidden="true"></div>
+
+      <!-- React Bits Pattern: Атмосферный дрейфующий туман -->
+      <canvas class="hero-fog-canvas" id="heroFogCanvas"></canvas>
+
+      <!-- Темный обсидиановый градиентный виньет -->
+      <div class="hero-vignette-scrim"></div>
+
+      <div class="hero-grid">
+        <!-- Текстовый блок слева -->
+        <div class="hero-copy">
+          <div class="badge-rust-wrap">
+            <span class="badge-rust">СЕНТЯБРЬ '26 // КАМПЕЙН</span>
+          </div>
+
+          <!-- React Bits Kinetic Blur Headline -->
+          <h1 class="display-title" id="heroTitle" aria-label="BALENCIAGA TRACK.1">
+            <span class="title-line"><span class="kinetic-char">B</span><span class="kinetic-char">A</span><span class="kinetic-char">L</span><span class="kinetic-char">E</span><span class="kinetic-char">N</span><span class="kinetic-char">C</span><span class="kinetic-char">I</span><span class="kinetic-char">A</span><span class="kinetic-char">G</span><span class="kinetic-char">A</span></span>
+            <span class="title-line"><span class="kinetic-char">T</span><span class="kinetic-char">R</span><span class="kinetic-char">A</span><span class="kinetic-char">C</span><span class="kinetic-char">K</span><span class="kinetic-char">.</span><span class="kinetic-char">1</span></span>
+          </h1>
+
+          <p class="body-copy">
+            176 структурных сегментов. Сложный индустриальный силуэт, адаптированный под осенний сезон среди туманных хребтов.
+          </p>
+
+          <div class="cta-cluster">
+            <a href="#catalogMatrix" class="btn-pill-solid" id="heroCtaBtn">
+              <span>СМОТРЕТЬ РЕЛИЗ →</span>
+            </a>
+            <div class="hero-price-block">
+              <span class="hero-price-label">АРХИВНАЯ ЦЕНА</span>
+              <span class="hero-price" id="heroPriceValue">1 050 €</span>
+            </div>
+          </div>
+
+          <div class="hero-feature-tags">
+            <span class="hero-feature-tag"><i data-lucide="shield-check"></i> 100% Legit Check</span>
+            <span class="hero-feature-tag"><i data-lucide="truck"></i> Экспресс доставка ЕС/СНГ</span>
+            <span class="hero-feature-tag"><i data-lucide="sparkles"></i> Полный архивный сет</span>
+          </div>
+        </div>
+
+        <!-- Визуальная сцена кроссовка: БЕЗ белого прямоугольника! Чистый вырез в темноте с 3D-параллаксом -->
+        <div class="hero-visual-stage" id="heroVisualStage">
+          <div class="sneaker-glow"></div>
+          <div class="sneaker-contact-shadow" id="sneakerContactShadow"></div>
+          
+          <div class="sneaker-tilt-wrapper" id="sneakerTiltWrapper">
+            <img
+              src="images/balenciaga-track-hero-transparent.png"
+              alt="Balenciaga Track.1 All-Black Isolated Cutout"
+              class="hero-sneaker-cutout"
+              id="heroSneakerCutout"
+              loading="eager"
+            >
+          </div>
+
+          <!-- Плавающая метрика -->
+          <div class="hero-tech-badge" id="heroTechBadge">
+            <span class="tech-spec-title" id="heroTechTitle">176 PROCEDURAL PANELS</span>
+            <span class="tech-spec-desc" id="heroTechDesc">DYNAMIC MULTI-CAGE CHASSIS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Интерактивная лента дропа: 4 флагманских товара прямо в Hero для насыщенного интерфейса -->
+      <div class="hero-drop-rail-wrap">
+        <div class="hero-drop-rail-header">
+          <span class="rail-eyebrow">// ВЫБОР ИЗ ДРОПА СЕЗОНА</span>
+          <span class="rail-hint">НАЖМИТЕ НА КАРТОЧКУ ДЛЯ ПРОСМОТРА В СЦЕНЕ [ 4 ПОЗИЦИИ ]</span>
+        </div>
+        <div class="hero-drop-rail" id="heroDropRail">
+          <!-- Рендерится через script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         4. REACT BITS: LOGO LOOP (INFINITE SEAMLESS MARQUEE WITH AUTHENTIC SVGS)
+         =================================================================== -->
+    <section class="logo-loop-strip" aria-label="Бренды магазина">
+      <div class="logo-loop-mask">
+        <div class="logo-loop-track">
+          <!-- Набор 1 -->
+          <div class="brand-item">
+            <svg class="brand-svg-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h7a3.5 3.5 0 0 1 3.5 3.5v0A3.5 3.5 0 0 1 11 12H4V5z"/><path d="M4 12h7.5a3.5 3.5 0 0 1 3.5 3.5v0A3.5 3.5 0 0 1 11.5 19H4v-7z"/><path d="M9 5h7a3.5 3.5 0 0 1 3.5 3.5v0A3.5 3.5 0 0 1 16 12H9"/><path d="M9 12h7.5a3.5 3.5 0 0 1 3.5 3.5v0A3.5 3.5 0 0 1 16.5 19H9"/></svg>
+            <span>BALENCIAGA</span>
+          </div>
+          <div class="loop-bullet">✦</div>
+          <div class="brand-item">
+            <svg class="brand-svg-logo" viewBox="0 0 24 24" fill="currentColor"><polygon points="3,4 12,20 21,4 17.5,4 12,14.5 6.5,4"/></svg>
+            <span>VETEMENTS</span>
+          </div>
+          <div class="loop-bullet">✦</div>
+          <div class="brand-item">
+            <svg class="brand-svg-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><polygon points="12,4 13.5,10.5 20,12 13.5,13.5 12,20 10.5,13.5 4,12 10.5,10.5" fill="currentColor"/></svg>
+            <span>STONE ISLAND</span>
+          </div>
+          <div class="loop-bullet">✦</div>
+          <div class="brand-item">
+            <svg class="brand-svg-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="8.5" cy="12" r="5.5"/><circle cx="15.5" cy="12" r="5.5"/><path d="M12 9.5v5"/><circle cx="8.5" cy="12" r="2" fill="currentColor"/><circle cx="15.5" cy="12" r="2" fill="currentColor"/></svg>
+            <span>C.P. COMPANY</span>
+          </div>
+          <div class="loop-bullet">✦</div>
+          <div class="brand-item">
+            <svg class="brand-svg-logo" viewBox="0 0 24 24" fill="currentColor"><path d="M6 16a4 4 0 1 1 4-4v4H6zm10 0a4 4 0 1 1 4-4v4h-4zm-4-10a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"/></svg>
+            <span>ON RUNNING</span>
+          </div>
+          <div class="loop-bullet">✦</div>
+          <div class="brand-item">
+            <svg class="brand-svg-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8" cy="9.5" r="1.2" fill="currentColor"/><circle cx="16" cy="9.5" r="1.2" fill="currentColor"/><line x1="7.5" y1="15" x2="16.5" y2="15"/></svg>
+            <span>ACNE STUDIOS</span>
+          </div>
+          <div class="loop-bullet">✦</div>
+          <div class="brand-item">
+            <svg class="brand-svg-logo" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 14.5,9.5 22,12 14.5,14.5 12,22 9.5,14.5 2,12 9.5,9.5"/></svg>
+            <span>RICK OWENS</span>
+          </div>
+          <div class="loop-bullet">✦</div>
+          <!-- Набор 2 для бесшовного зацикливания -->
+          <div class="brand-item">
+            <svg class="brand-svg-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h7a3.5 3.5 0 0 1 3.5 3.5v0A3.5 3.5 0 0 1 11 12H4V5z"/><path d="M4 12h7.5a3.5 3.5 0 0 1 3.5 3.5v0A3.5 3.5 0 0 1 11.5 19H4v-7z"/><path d="M9 5h7a3.5 3.5 0 0 1 3.5 3.5v0A3.5 3.5 0 0 1 16 12H9"/><path d="M9 12h7.5a3.5 3.5 0 0 1 3.5 3.5v0A3.5 3.5 0 0 1 16.5 19H9"/></svg>
+            <span>BALENCIAGA</span>
+          </div>
+          <div class="loop-bullet">✦</div>
+          <div class="brand-item">
+            <svg class="brand-svg-logo" viewBox="0 0 24 24" fill="currentColor"><polygon points="3,4 12,20 21,4 17.5,4 12,14.5 6.5,4"/></svg>
+            <span>VETEMENTS</span>
+          </div>
+          <div class="loop-bullet">✦</div>
+          <div class="brand-item">
+            <svg class="brand-svg-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><polygon points="12,4 13.5,10.5 20,12 13.5,13.5 12,20 10.5,13.5 4,12 10.5,10.5" fill="currentColor"/></svg>
+            <span>STONE ISLAND</span>
+          </div>
+          <div class="loop-bullet">✦</div>
+          <div class="brand-item">
+            <svg class="brand-svg-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="8.5" cy="12" r="5.5"/><circle cx="15.5" cy="12" r="5.5"/><path d="M12 9.5v5"/><circle cx="8.5" cy="12" r="2" fill="currentColor"/><circle cx="15.5" cy="12" r="2" fill="currentColor"/></svg>
+            <span>C.P. COMPANY</span>
+          </div>
+          <div class="loop-bullet">✦</div>
+          <div class="brand-item">
+            <svg class="brand-svg-logo" viewBox="0 0 24 24" fill="currentColor"><path d="M6 16a4 4 0 1 1 4-4v4H6zm10 0a4 4 0 1 1 4-4v4h-4zm-4-10a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"/></svg>
+            <span>ON RUNNING</span>
+          </div>
+          <div class="loop-bullet">✦</div>
+          <div class="brand-item">
+            <svg class="brand-svg-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8" cy="9.5" r="1.2" fill="currentColor"/><circle cx="16" cy="9.5" r="1.2" fill="currentColor"/><line x1="7.5" y1="15" x2="16.5" y2="15"/></svg>
+            <span>ACNE STUDIOS</span>
+          </div>
+          <div class="loop-bullet">✦</div>
+          <div class="brand-item">
+            <svg class="brand-svg-logo" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 14.5,9.5 22,12 14.5,14.5 12,22 9.5,14.5 2,12 9.5,9.5"/></svg>
+            <span>RICK OWENS</span>
+          </div>
+          <div class="loop-bullet">✦</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         5. CATALOG MATRIX ("АРХИВНЫЕ ПОЗИЦИИ")
+         =================================================================== -->
+    <section class="catalog-matrix" id="catalogMatrix">
+      <div class="catalog-matrix-inner">
+        <!-- Шапка матрицы -->
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">// ОФИЦИАЛЬНЫЙ КАТАЛОГ СЕЗОНА</span>
+            <h2 class="section-title">СПИСОК ТОВАРОВ</h2>
+          </div>
+          <div class="matrix-stats" id="matrixStats">
+            ● 4 ПОЗИЦИИ В НАЛИЧИИ
+          </div>
+        </div>
+
+        <!-- Мобильная горизонтальная лента категорий для управления одним пальцем -->
+        <div class="catalog-mobile-filters" aria-label="Быстрые категории">
+          <button class="mobile-filter-chip is-active" data-filter="all" data-decrypted="ТОП ТОВАРЫ">ТОП ТОВАРЫ (4)</button>
+          <button class="mobile-filter-chip" data-filter="footwear">ОБУВЬ</button>
+          <button class="mobile-filter-chip" data-filter="outerwear">КУРТКИ & ХУДИ</button>
+          <button class="mobile-filter-chip" data-filter="tops">ФУТБОЛКИ</button>
+        </div>
+
+        <!-- 3-Колоночный грид: Glass Surface Cards (React Bits) -->
+        <div class="products-grid" id="productsGrid">
+          <!-- Рендерится через script.js со строгой предметной съемкой БЕЗ людей -->
+        </div>
+
+        <!-- Пустой результат -->
+        <div class="matrix-empty-state" id="matrixEmptyState" style="display: none;">
+          <i data-lucide="package-search"></i>
+          <h3>Позиции не найдены</h3>
+          <p>В выбранной категории нет доступных предметов. Попробуйте сбросить фильтр.</p>
+          <button class="btn-pill-solid" onclick="resetActiveCategory()">Сбросить фильтр</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         7. GLASS FOOTER
+         =================================================================== -->
+    <footer class="glass-footer">
+      <div class="footer-container">
+        <div class="footer-columns">
+          <!-- Колонка 1: Бренд и аутентичность -->
+          <div class="footer-col col-brand">
+            <a href="#" class="footer-brand-title">MURK1INSHOPSPORTFOLIO</a>
+            <p class="footer-manifesto">
+              Кураторский концепт-стор архивного стритвира и редкой обуви. Безупречная аутентификация, прямые европейские поставки и эксклюзивные дропы.
+            </p>
+            <div class="auth-guarantee-badge">
+              <i data-lucide="shield-check"></i>
+              <span>ГАРАНТИЯ ПОДЛИННОСТИ LEGIT CHECK</span>
+            </div>
+          </div>
+
+          <!-- Колонка 2: Клиентский сервис -->
+          <div class="footer-col col-service">
+            <h4 class="footer-col-title">КЛИЕНТСКИЙ СЕРВИС</h4>
+            <ul class="footer-links">
+              <li><a href="#" onclick="showServiceModal('delivery'); return false;">Курьерская доставка по ЕС и СНГ</a></li>
+              <li><a href="#" onclick="showServiceModal('returns'); return false;">Условия примерки и возврата (14 дней)</a></li>
+              <li><a href="#" onclick="showServiceModal('auth'); return false;">Методология аутентификации вещей</a></li>
+              <li><a href="#" onclick="showServiceModal('sizes'); return false;">Таблица европейских размеров</a></li>
+            </ul>
+          </div>
+
+          <!-- Колонка 3: Закрытый клуб -->
+          <div class="footer-col col-club">
+            <h4 class="footer-col-title">ЗАКРЫТЫЙ КЛУБ</h4>
+            <p class="club-desc">Получайте персональный ранний доступ к лимитированным архивным поставкам и секретным ресейлам.</p>
+            <form class="club-form" id="newsletterForm" onsubmit="handleClubSubscribe(event)">
+              <div class="pill-input-box">
+                <input type="email" class="pill-input" id="newsletterEmail" placeholder="Ваш e-mail..." required>
+                <button type="submit" class="pill-btn-submit">ПОДПИСАТЬСЯ</button>
+              </div>
+            </form>
+            <div class="club-success" id="clubSuccess" style="display: none;">
+              <span>✓ Вы успешно добавлены в закрытый список</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bar">
+          <span>© 2026 MURK1INSHOPSPORTFOLIO. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</span>
+          <div class="footer-meta-links">
+            <a href="#">Конфиденциальность</a>
+            <span class="meta-dot">•</span>
+            <a href="#">Публичная оферта</a>
+            <span class="meta-dot">•</span>
+            <span>Валюта: EUR (€)</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===================================================================
+         8. SLIDE-OUT GLASS CART DRAWER
+         =================================================================== -->
+    <div class="drawer-backdrop" id="cartBackdrop"></div>
+    <aside class="glass-drawer" id="cart-drawer" role="dialog" aria-label="Корзина покупателя">
+      <!-- Верхняя панель корзины -->
+      <div class="drawer-top">
+        <div class="drawer-heading-row">
+          <span class="drawer-status-dot"></span>
+          <h3 class="drawer-title">ВАША КОРЗИНА</h3>
+          <span class="drawer-badge" id="drawerCartBadge">0</span>
+        </div>
+        <button class="drawer-close" id="closeCartBtn" aria-label="Закрыть корзину">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <!-- Тело корзины -->
+      <div class="drawer-body">
+        <!-- Пустое состояние -->
+        <div class="cart-empty-state" id="cartEmptyState">
+          <div class="empty-icon-circle">
+            <i data-lucide="shopping-bag"></i>
+          </div>
+          <h4>КОРЗИНА ПУСТА</h4>
+          <p>В вашем заказе пока нет добавленных позиций. Ознакомьтесь с актуальным каталогом.</p>
+          <button class="btn-pill-solid" onclick="closeCartDrawer()">К КАТАЛОГУ</button>
+        </div>
+
+        <!-- Список элементов -->
+        <div class="cart-items-container" id="cartItemsContainer"></div>
+      </div>
+
+      <!-- Подвал корзины -->
+      <div class="drawer-footer" id="drawerFooter" style="display: none;">
+        <div class="drawer-summary">
+          <div class="summary-row">
+            <span>Подытог</span>
+            <span class="summary-price" id="subtotalPriceVal">0 €</span>
+          </div>
+          <div class="summary-row">
+            <span>Курьерская доставка</span>
+            <span class="summary-price free-accent">Бесплатно</span>
+          </div>
+          <div class="summary-row total-line">
+            <span>ИТОГО К ОПЛАТЕ</span>
+            <span class="summary-price total-val" id="totalPriceVal">0 €</span>
+          </div>
+        </div>
+
+        <button class="checkout-pill" id="checkoutBtn">
+          <span>ПЕРЕЙТИ К ОФОРМЛЕНИЮ — <span id="checkoutTotalBadge">0 €</span></span>
+          <i data-lucide="arrow-right"></i>
+        </button>
+
+        <div class="drawer-safe-tag">
+          <i data-lucide="lock"></i>
+          <span>БЕЗОПАСНЫЙ СТАНДАРТ ПЛАТЕЖЕЙ // ПОДЛИННОСТЬ ГАРАНТИРОВАНА</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ===================================================================
+         9. МОДАЛЬНОЕ ОКНО КОНФИГУРАЦИИ РАЗМЕРА
+         =================================================================== -->
+    <div class="modal-backdrop" id="sizeModalBackdrop">
+      <div class="size-modal-surface glass-card" id="sizeModalSurface">
+        <button class="modal-close-btn" id="closeSizeModalBtn" aria-label="Закрыть">
+          <i data-lucide="x"></i>
+        </button>
+
+        <div class="modal-inner-grid">
+          <div class="modal-media-wrap">
+            <img id="modalImg" src="images/balenciaga-track-hero-transparent.png" alt="Превью" class="modal-product-img">
+            <span class="modal-chip-badge" id="modalBadge">ФЛАГМАН</span>
+          </div>
+
+          <div class="modal-content-wrap">
+            <span class="modal-category" id="modalCategory">ОБУВЬ</span>
+            <h3 class="modal-item-title" id="modalItemTitle">Balenciaga Track.1</h3>
+            <p class="modal-item-desc" id="modalItemDesc">176 структурных сегментов каркаса из нейлона и сетки.</p>
+            <div class="modal-item-price" id="modalItemPrice">1 050 €</div>
+
+            <div class="modal-sizes-group">
+              <div class="sizes-header-line">
+                <span>ВЫБЕРИТЕ РАЗМЕР:</span>
+                <span class="active-size-label" id="activeSizeLabel">42 EU</span>
+              </div>
+              <div class="size-chips-grid" id="modalSizeChipsGrid"></div>
+            </div>
+
+            <button class="btn-pill-solid modal-add-btn" id="modalConfirmBtn">
+              + В КОРЗИНУ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================================================================
+         10. ВСПЛЫВАЮЩИЙ ТОАСТ
+         =================================================================== -->
+    <div class="glass-toast" id="glassToast" role="status" aria-live="polite">
+      <div class="toast-sparkle">✦</div>
+      <div class="toast-text-group">
+        <div class="toast-title" id="toastTitle">ДОБАВЛЕНО В КОРЗИНУ</div>
+        <div class="toast-caption" id="toastCaption">Balenciaga Track.1 [ 42 EU ]</div>
+      </div>
+    </div>
+
+    <!-- ===================================================================
+         11. МОБИЛЬНЫЙ ПЛАВАЮЩИЙ ДОК НАВИГАЦИИ (FLOATING BOTTOM DOCK)
+         =================================================================== -->
+    <nav class="mobile-bottom-dock" id="mobileBottomDock" aria-label="Мобильная навигация">
+      <a href="#catalogMatrix" class="dock-item is-active" id="dockCatalogBtn">
+        <i data-lucide="layout-grid"></i>
+        <span>Каталог</span>
+      </a>
+      <button class="dock-item" id="dockSearchBtn">
+        <i data-lucide="search"></i>
+        <span>Поиск</span>
+      </button>
+      <button class="dock-item" id="dockWishlistBtn">
+        <i data-lucide="heart"></i>
+        <span class="dock-badge" id="dockWishlistBadge" style="display: none;">0</span>
+        <span>Избранное</span>
+      </button>
+      <button class="dock-item" id="dockCartBtn">
+        <i data-lucide="shopping-bag"></i>
+        <span class="dock-badge" id="dockCartBadge">0</span>
+        <span>Корзина</span>
+      </button>
+    </nav>
+
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
