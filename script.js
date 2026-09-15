@@ -126,50 +126,66 @@ PRODUCTS.forEach((p) => {
 // ==========================================================================
 // 3. ИНИЦИАЛИЗАЦИЯ
 // ==========================================================================
-document.addEventListener('DOMContentLoaded', () => {
-  initHeroDropRail();
-  renderCatalogMatrix();
-  initHeaderNavigation();
-  initCategoryFilters();
-  initCatalogSearch();
-  initCartSlideDrawer();
-  initSizePickerModal();
-  initMobileBottomDock();
-  initLucideIcons();
+function initApp() {
+  try { initHeroDropRail(); } catch (e) { console.warn('initHeroDropRail error:', e); }
+  try { renderCatalogMatrix(); } catch (e) { console.warn('renderCatalogMatrix error:', e); }
+  try { initHeaderNavigation(); } catch (e) { console.warn('initHeaderNavigation error:', e); }
+  try { initCategoryFilters(); } catch (e) { console.warn('initCategoryFilters error:', e); }
+  try { initCatalogSearch(); } catch (e) { console.warn('initCatalogSearch error:', e); }
+  try { initCartSlideDrawer(); } catch (e) { console.warn('initCartSlideDrawer error:', e); }
+  try { initSizePickerModal(); } catch (e) { console.warn('initSizePickerModal error:', e); }
+  try { initMobileBottomDock(); } catch (e) { console.warn('initMobileBottomDock error:', e); }
+  try { initLucideIcons(); } catch (e) { console.warn('initLucideIcons error:', e); }
 
   // React Bits Effects
-  initAtmosphericFog();
-  initKineticBlurHeadline();
-  initHeroSneakerMouseParallax();
+  try { initAtmosphericFog(); } catch (e) { console.warn('initAtmosphericFog error:', e); }
+  try { initKineticBlurHeadline(); } catch (e) { console.warn('initKineticBlurHeadline error:', e); }
+  try { initHeroSneakerMouseParallax(); } catch (e) { console.warn('initHeroSneakerMouseParallax error:', e); }
 
   // React Bits: Ferrofluid Interactive Shader Background
-  const ferrofluidEl = document.getElementById('heroFerrofluidContainer');
-  if (ferrofluidEl) {
-    createFerrofluid(ferrofluidEl, {
-      colors: ['#a7c7fc', '#a7c9ff', '#ffffff'],
-      speed: 0.5,
-      scale: 1,
-      turbulence: 1,
-      fluidity: 0.1,
-      rimWidth: 0.2,
-      sharpness: 3,
-      shimmer: 1,
-      glow: 2,
-      flowDirection: 'down',
-      opacity: 0.9,
-      mouseInteraction: true,
-      mouseStrength: 1,
-      mouseRadius: 0.3,
-    });
+  try {
+    const ferrofluidEl = document.getElementById('heroFerrofluidContainer');
+    if (ferrofluidEl && typeof createFerrofluid === 'function') {
+      createFerrofluid(ferrofluidEl, {
+        colors: ['#a7c7fc', '#a7c9ff', '#ffffff'],
+        speed: 0.5,
+        scale: 1,
+        turbulence: 1,
+        fluidity: 0.1,
+        rimWidth: 0.2,
+        sharpness: 3,
+        shimmer: 1,
+        glow: 2,
+        flowDirection: 'down',
+        opacity: 0.9,
+        mouseInteraction: true,
+        mouseStrength: 1,
+        mouseRadius: 0.3,
+      });
+    }
+  } catch (e) {
+    console.warn('Ferrofluid WebGL init skipped:', e);
   }
 
   // React Bits: DecryptedText Component for "ТОП ТОВАРЫ" and interactive items
-  initDecryptedText('[data-decrypted]', {
-    speed: 35,
-    revealDirection: 'center',
-    characters: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+',
-  });
-});
+  try {
+    if (typeof initDecryptedText === 'function') {
+      initDecryptedText('[data-decrypted]', {
+        speed: 35,
+        revealDirection: 'center',
+        characters: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+',
+      });
+    }
+  } catch (e) {
+    console.warn('DecryptedText init error:', e);
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initApp);
+} else {
+  initApp();
+}
 
 function initLucideIcons() {
   if (typeof lucide !== 'undefined') {

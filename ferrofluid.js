@@ -1,4 +1,4 @@
-import { Renderer, Program, Mesh, Triangle } from 'ogl';
+import { Renderer, Program, Mesh, Triangle } from 'https://cdn.jsdelivr.net/npm/ogl/+esm';
 
 const MAX_COLORS = 8;
 
